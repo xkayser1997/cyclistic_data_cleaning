@@ -112,8 +112,8 @@ set ride_duration = time_diff(end_time_only, start_time_only, second)
 WHERE true;
 
 --Step 9: Removed rides with negative durations
---then rides with durations under 15 seconds
---assuming inaccurate records
+--then rides with durations under 15 seconds.
+--Assumed inaccurate records due to duration.
 DELETE FROM `cedar-turbine-501913-v0.cyclistic_rides.all_rides`
 WHERE ride_duration < 0
 
